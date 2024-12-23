@@ -1,4 +1,4 @@
-package  ru.netology.services;
+package ru.netology.services;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -14,11 +14,11 @@ public class CalcServiceTest {
         int expected = 3;
 
         int actual = service.calculate(income, expenses, treshold);
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void CalculateIfEarnHundredThousands () {
+    public void CalculateIfEarnHundredThousands() {
         CalcService service = new CalcService();
 
         int income = 100000;
@@ -27,6 +27,6 @@ public class CalcServiceTest {
         int expected = 2;
 
         int actual = service.calculate(income, expenses, treshold);
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 }
